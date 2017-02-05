@@ -7,33 +7,41 @@
 <script src="script.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+<link rel="stylesheet" href="./assets/font-awesome.min.css" />
 <style>
-
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#efefef;
+	border-radius:5px;
+	padding:10px;
+	font-size:12px Arial;
+}
 .editor{
 	min-height: 500px;
 	border: 1px solid #000;
 	padding: 10px 20px;
 	font-size: 20px;
 }
-#div1 {
-    width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-}
 p {
 	border: 1px solid red;
-  padding: 30px;
+	padding: 0px;
   background: yellow;
-	cursor: move;
 }
 </style>
 </head>
 <body>
 	<h1>This is the Skit text editor</h1>
 <br>
+<button id="extract">Link Nikaaal!</button>
 <div class="editor" id="content" contenteditable="true">
-	<p></p>
+	<p class="default"><span><span class="placeholder">Sample text</span><br/></span></p>
 </div>
+<div class="tooltip"><a href="#" id="bold"><i class="fa fa-bold"></i></a>
+		<a href="#" id="underline"><i class="fa fa-underline"></i></a>
+	<a href="#" id="red"><i class="fa fa-font"></i></a></div>
+	<div class="links">
+	</div>
 </body>
 </html>

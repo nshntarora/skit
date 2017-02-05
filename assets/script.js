@@ -29,6 +29,11 @@ $(document).on('click keyup',"#content",function(e){
 //document.execCommand('defaultParagraphSeparator', false, 'p');
 $(document).ready(function(){
   console.log("doc ready");
+
+  $("body").on("click",function(){
+    $(".tooltip").hide();
+  })
+
   $('#content').sortable({
     revert: true,
     cancel: "#content p span"
@@ -43,6 +48,7 @@ $(document).ready(function(){
     document.execCommand('bold');
     p = window.getSelection().anchorNode.parentNode.closest("p");
     $(p).wrapInner("<span></span>");
+    $(".tooltip").hide();
     console.log("You just pressed bold");
   });
 
@@ -50,6 +56,7 @@ $(document).ready(function(){
     document.execCommand('underline');
     p = window.getSelection().anchorNode.parentNode.closest("p");
     $(p).wrapInner("<span></span>");
+    $(".tooltip").hide();
     console.log("You just pressed underline");
   });
 
@@ -57,6 +64,7 @@ $(document).ready(function(){
     document.execCommand('forecolor',false,'red');
     p = window.getSelection().anchorNode.parentNode.closest("p");
     $(p).wrapInner("<span></span>");
+    $(".tooltip").hide();
     console.log("You just pressed red");
   });
 
@@ -67,6 +75,7 @@ $(document).ready(function(){
     console.log(links);
     var i=0;
     $(".links").html("");
+    $(".links").html("<h2>Here are the links we've found...</h2>");
     blue = true;
     while(i<links.length){
       $(".links").append(links[i]);

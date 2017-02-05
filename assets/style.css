@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Asap|Vollkorn:400,700');
+body {
+	font-family: "Asap",sans-serif;
+	color: #4d4d4d;
+}
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #4d4d4d;
+	background-color:#4d4d4d;
+	border-radius:0px;
+	padding:10px;
+	font-size:12px Arial;
+}
+.tooltip a {
+	padding: 10px;
+	color: #fff;
+}
+.tooltip #red {
+	color: red;
+}
+.tooltip a:hover {
+	color: #fece46;
+}
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+.editor{
+	min-height: 300px;
+	border: 1px solid #efefef;
+	padding: 10px 20px;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.editor:focus {
+	outline: 0px solid transparent;
+}
+p {
+	border: 1px solid transparent;
+	padding: 10px;
+	cursor: move;
+	border-radius: 5px;
+  background: #f6f6f6;
+  font-family: "Vollkorn",serif;
+}
+span {
+	cursor: text;
+}
+.logo {
+	height: 150px;
+	max-height: 150px;
+	width: auto;
+}
+.header {
+	text-align: center;
+}
+.button {
+	padding: 10px 20px;
+	background: #fece46;
+	font-size: 16px;
+	cursor: pointer;
+	color: #4d4d4d;
+	border: 1px solid transparent;
+	font-family: "Asap",sans-serif;
+}
+.button:hover,.button:focus,.button:active {
+	background: #f6b601;
+}
+.links a {
+	margin-bottom: 10px;
+}
+.footer {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.footer-logo {
+	max-height: 30px;
+	width: auto;
+	height: 30px;
+}

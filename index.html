@@ -5,7 +5,10 @@
 	</title>
 <script src="jquery.js" type="text/javascript"></script>
 <script src="script.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <style>
+
 .editor{
 	min-height: 500px;
 	border: 1px solid #000;
@@ -22,6 +25,7 @@ p {
 	border: 1px solid red;
   padding: 30px;
   background: yellow;
+	cursor: move;
 }
 </style>
 </head>
@@ -29,7 +33,7 @@ p {
 	<h1>This is the Skit text editor</h1>
 <br>
 <div class="editor" id="content" contenteditable="true">
-	<p class="default">Start writing here...</p>
+	<p></p>
 </div>
 </body>
 </html>

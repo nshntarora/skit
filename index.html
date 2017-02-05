@@ -1,15 +1,35 @@
-<doctype html/>
 <html>
 <head>
 	<title>
 	Skit
 	</title>
+<script src="jquery.js" type="text/javascript"></script>
 <script src="script.js" type="text/javascript"></script>
+<style>
+.editor{
+	min-height: 500px;
+	border: 1px solid #000;
+	padding: 10px 20px;
+	font-size: 20px;
+}
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+p {
+	border: 1px solid red;
+  padding: 30px;
+  background: yellow;
+}
+</style>
 </head>
 <body>
 	<h1>This is the Skit text editor</h1>
-	<div class="editor" contentEditable>
-		This is an editable element
-	</div>
+<br>
+<div class="editor" id="content" contenteditable="true">
+	<p class="default">Start writing here...</p>
+</div>
 </body>
 </html>

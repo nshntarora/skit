@@ -81,6 +81,19 @@ $(document).ready(function(){
     $(content).find("a").unwrap();
   });
 
+  $("#replace").on("click",function(){
+    $.get( "http://www.setgetgo.com/randomword/get.php", function( data ) {
+      a = $("#content").text().match(/\b[a-zA-Z]{4}\b/);
+      while(a)
+      {
+        console.log(a);
+        b = $("#content").html().replace(a[0],data);
+        $("#content").html(b);
+        a = $("#content").text().match(/\b[a-zA-Z]{4}\b/);
+        console.log("ONe iterations");
+      }
+    });
+  });
 });
 
 $(document).on("click keyup","#content",function(){

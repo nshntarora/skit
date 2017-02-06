@@ -81,9 +81,9 @@ $(document).ready(function(){
       $(".links").append(links[i]); // Add the link
       $(".links").append("<br/>");
       if(blue)
-        $(links[i]).css("color","red"); // If blue make the link blue
+        $(links[i]).css("color","red"); // If blue is true make the link red
       else
-        $(links[i]).css("color","blue"); // If not blue make the link red
+        $(links[i]).css("color","blue"); // If not blue make the link blue
       i+=1; // Increment counter
       blue=!blue; // Toggle color
     }
